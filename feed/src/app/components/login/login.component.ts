@@ -7,12 +7,13 @@ import { Router } from '@angular/router';
     styleUrl: './login.component.sass'
 })
 export class LoginComponent {
-    public userID: string = '';
+    public userId: string = '';
 
     constructor(private router: Router) { }
 
     onLogin() {
-        if (this.userID !== '') {
+        if (this.userId !== '') {
+            localStorage.setItem("userId", this.userId);
             this.router.navigate(['/home']);
         }
     }

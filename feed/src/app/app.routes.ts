@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { FeedHomeComponent } from './feed-home/feed-home.component';
-import { LoginComponent } from './login/login.component';
+import { FeedHomeComponent } from './components/feed-home/feed-home.component';
+import { LoginComponent } from './components/login/login.component';
 
 export const routes: Routes = [
     { path: 'login', component: LoginComponent },

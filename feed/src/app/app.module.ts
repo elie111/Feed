@@ -5,8 +5,9 @@ import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routes';
-import { FeedHomeComponent } from './feed-home/feed-home.component';
-import { LoginComponent } from './login/login.component';
+import { FeedHomeComponent } from './components/feed-home/feed-home.component';
+import { LoginComponent } from './components/login/login.component';
+import { PostComponent } from './components/post/post.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,10 @@ import { LoginComponent } from './login/login.component';
     )
   ],
   declarations: [
-    AppComponent, LoginComponent, FeedHomeComponent,
+    PostComponent,
+    AppComponent,
+    LoginComponent,
+    FeedHomeComponent,
   ],
   bootstrap: [AppComponent]
 })

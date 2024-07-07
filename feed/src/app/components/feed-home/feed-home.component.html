@@ -1,0 +1,7 @@
+<div class="header">
+  Feed
+  {{userId}}
+</div>
+@for (post of posts; track post) {
+  <Post [details]="post"></Post>
+}
