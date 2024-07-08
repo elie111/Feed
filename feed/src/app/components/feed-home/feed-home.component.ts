@@ -7,7 +7,7 @@ import { Post } from '../../models/post';
   styleUrl: './feed-home.component.sass'
 })
 export class FeedHomeComponent {
-  posts: Array<Post> = [];
+  posts: Array<Post> = [new Post('test', 'test', 'test'), new Post('test2', 'teset2', 'test3'), new Post()];
   userId: string = '';
 
   constructor() {

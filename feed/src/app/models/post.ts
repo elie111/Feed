@@ -1,5 +1,7 @@
 export class Post {
-  title: string = '';
-  content: string = '';
-  imageUrl: string = '';
+
+  constructor(
+    public title?: string,
+    public content?: string,
+    public imageUrl?: string) { }
 }

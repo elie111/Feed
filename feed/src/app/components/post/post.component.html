@@ -1,1 +1,16 @@
-<p>post works!</p>
+<div class="post-container">
+  <div class="post-title">
+    {{ postData.title }}
+  </div>
+  <div class="post-content">
+    {{ postData.content }}
+  </div>
+  @if (postData.imageUrl) {
+  <div class="post-image"></div>
+  }
+  <div class="bottom-container">
+    <button class="reaction-button"></button>
+    <button class="comments-button"></button>
+    <button class="share-button"></button>
+  </div>
+</div>

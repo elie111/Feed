@@ -3,5 +3,5 @@
   {{userId}}
 </div>
 @for (post of posts; track post) {
-  <Post [details]="post"></Post>
+  <app-post [postData]="post"></app-post>
 }
